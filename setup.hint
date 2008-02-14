@@ -1,0 +1,5 @@
+category: Lua
+requires: lua lua-expat lua-socket
+sdesc: "Lua SOAP library"
+ldesc: "LuaSOAP is a library to ease the use of SOAP. LuaSOAP provides a 
+very simple API that convert Lua tables to and from XML documents."

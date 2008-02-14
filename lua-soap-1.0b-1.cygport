@@ -1,0 +1,20 @@
+inherit lua
+
+DESCRIPTION="Lua SOAP library"
+HOMEPAGE="http://www.keplerproject.org/luasoap/"
+SRC_URI="http://luaforge.net/frs/download.php/270/${PN/-}-${PV}.tar.gz"
+SRC_DIR="${PN/-}-${PV}"
+
+src_compile() { :; }
+
+src_test() {
+	cd ${S}
+	${LUA} test.lua
+}
+
+src_install() {
+	cd ${S}
+	cyginstall LUA_DIR=${D}${LUA_SCRIPTDIR}
+}
+
+HTMLDOCS="*.html *.png"

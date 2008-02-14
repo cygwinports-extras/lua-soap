@@ -1,0 +1,55 @@
+lua-soap
+------------------------------------------
+LuaSOAP is a library to ease the use of SOAP. LuaSOAP provides a very 
+simple API that convert Lua tables to and from XML documents.
+
+Runtime requirements:
+  lua-5.1.3-1
+  lua-expat-1.1-1
+  lua-socket-2.0.2-1
+
+Build requirements:
+  cygport-0.3.8-1
+  make-3.81-1
+
+Canonical website:
+  http://www.keplerproject.org/luasoap/
+
+Canonical download:
+  http://luaforge.net/projects/luasoap/
+
+-------------------------------------------
+
+Build instructions:
+  unpack lua-soap-1.0b-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./lua-soap-1.0b-X.cygport all
+
+This will create:
+  /usr/src/lua-soap-1.0b-X-src.tar.bz2
+  /usr/src/lua-soap-1.0b-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/share/doc/lua-soap-1.0b/README
+  /usr/share/doc/lua-soap-1.0b/html/index.html
+  /usr/share/doc/lua-soap-1.0b/html/license.html
+  /usr/share/doc/lua-soap-1.0b/html/luasoap.png
+  /usr/share/doc/lua-soap-1.0b/html/manual.html
+  /usr/share/lua/5.1/soap/http.lua
+  /usr/share/lua/5.1/soap/soap.lua
+
+------------------
+
+Port Notes:
+
+----- version 1.0b-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
